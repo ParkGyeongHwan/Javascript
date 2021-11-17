@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+    <script>
+        var i = 100;
+        var j = "300";
+        var k = i+j;
+        /*console.log("변수 i 에 들어간 값은"+ i +"입니다");
+        window.alert("변수 i 에 들어간 값은 "+ i +" 입니다"); */
+       // console.log( typeof(i)); //number
+       // console.log( typeof(j)); //string
+       // console.log( typeof(k)); //string
+           var returni = myFunction(i);
+           var returnj = myFunction(j);
+           var returnk = myFunction(k);
+
+            console.log(returni);
+            console.log(returnj);
+            console.log(returnk);
+
+        function myFunction(value) {
+            console.log(typeof(value));
+            alert(value);
+
+            
+
+            alert("끝");
+            return vlaue = value+" 의 타입은 "+typeof(value);
+        }
+
+
+    </script>        
+
+
+
+
+    </body>
+</html>
