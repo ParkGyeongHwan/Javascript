@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <button id="getname">이름입력받기</button>
+        <div id="hi"></div>
+        <script>
+            document
+                .getElementById('getname')
+                .addEventListener('click', // 어떤 이벤트인지
+                        function () { // 이벤트 발생시 실행 함수 (무기명함수)
+                    getname();
+                });                 //버튼
+
+            function getname() {
+                var value = prompt('이름입력');
+            }
+            document
+                .getElementById('hi')
+                .innerHTML = value + "안녕하세요";
+        </script>
+
+    </body>
+</html>
