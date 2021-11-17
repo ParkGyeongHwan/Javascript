@@ -8,21 +8,20 @@
             console.log(value);
             console.log(typeof( value)); */
             //var value = prompt('이름을 입력해주세요');
-            //alert(value+"님 안녕하세요");
-            study();
+            //alert(value+"님 안녕하세요");            
             function study() {
-
             var value = prompt('100을 입력해 주세요');
 
             if (value == '100') {
-                alert('제대로 입력하셨습니다.') ;
+                 alert('제대로 입력하셨습니다.') ;
                 } else {
                     alert('100이 아니라'+value+'이입력되었습니다');
-                }            
-                study();
+                    study();
+                }                            
             }
-
         </script>
+    <button onclick="study();">100입력받기</button>
+
 
     </body>
 </html>
