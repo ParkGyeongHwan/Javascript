@@ -19,11 +19,19 @@
                 var a = prompt("숫자를입력하세요");
                 num1 = Number(a);
                 if (isNaN(a) == false) {
-                    var d = 0;
+                    var d = "";
                     for (var i = 0; i <= a; i++) {
+                                        
+                    
+                    if(i%3==0) {
+                    d = d +'<b style="color:red;">' + i  +" "+'</b>';
+                     } else {
                         d = d + i + " ";
-                        console.log(d)
-                    }
+
+                     }
+
+                }
+                    console.log(d)                        
                     document
                         .getElementById('c')
                         .innerHTML = d;
