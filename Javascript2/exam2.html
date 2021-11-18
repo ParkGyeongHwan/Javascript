@@ -15,22 +15,23 @@
                     numbers();        //버튼실행
                 });
 
-
-
             function numbers() {
                 var a = prompt("숫자를입력하세요");
                 num1 = Number(a);
-                if (a ) {
+                if (isNaN (a)==false) {
+                    var d=0;
+                    for(var i=0; i<=a; i++)
+                    {
+                        d= i+d+" ";
+                        console.log(d)
+                    }                                
                     document
                         .getElementById('c')
-                        .innerHTML = a;
+                        .innerHTML = d;
                  }  else {
                         numbers();
                     }
-                }
-
-            
+                }        
         </script>
-
     </body>
 </html>

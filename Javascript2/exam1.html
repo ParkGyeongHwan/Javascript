@@ -7,18 +7,18 @@
         <p id="c"></p>
 
         <button id="btn">
-        값을 입력하세요</button>
+            값을 입력하세요</button>
 
         <script>
-                document.getElementById('btn')
-                .addEventListener('click',
-                function(){
-                    numbers();        //버튼실행
+            document
+                .getElementById('btn')
+                .addEventListener('click', function () {
+                    numbers(); //버튼실행
                 });
 
-            function numbers(){
-                var a =prompt("첫번째값을 입력하세요");
-                var b =prompt("두번째값을 입력하세요");
+            function numbers() {
+                var a = prompt("첫번째값을 입력하세요");
+                var b = prompt("두번째값을 입력하세요");
                 var num1;
                 var num2;
                 num1 = Number(a);
@@ -26,22 +26,17 @@
                 console.log(typeof(num1));
                 console.log(typeof(num2));
 
-                if(isNaN(a+b)==false) {                
-                    document.getElementById('c')
-                    .innerHTML = num1+num2;
+                if (isNaN(a + b) == false) {
+                    document
+                        .getElementById('c')
+                        .innerHTML = num1 + num2;
 
-                }  else {
+                } else {
                     numbers();
                 }
 
             }
-
-
-
         </script>
-
-
-
 
     </body>
 </html>
