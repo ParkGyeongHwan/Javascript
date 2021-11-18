@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>dja</title>
+    </head>
+    <body>
+    <button id="btn">이미지바꾸기</button>        
+
+        <img id="photo" src="람썬.jpeg">
+
+
+
+        <script>
+            var old_image =document.getElementById('photo').src
+            console.log(old_image)
+            document.getElementById('btn').addEventListener('click',function(){
+                if(document.getElementById('photo').src===old_image) {
+                    document.getElementById('photo').src="람썬1.png";
+                }  else {
+                    document.getElementById('photo').src=old_image;
+                }
+               
+            })
+
+
+
+
+        </script>
+
+
+    </body>
+</html>
