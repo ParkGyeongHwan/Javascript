@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="c"></p>
+
+        <button id="btn">
+            값을 입력하세요</button>
+
+        <script>
+            document.getElementById('btn')
+                .addEventListener('click',
+                function(){
+                    numbers();        //버튼실행
+                });
+
+
+
+            function numbers() {
+                var a = prompt("숫자를입력하세요");
+                num1 = Number(a);
+                if (a ) {
+                    document
+                        .getElementById('c')
+                        .innerHTML = a;
+                 }  else {
+                        numbers();
+                    }
+                }
+
+            
+        </script>
+
+    </body>
+</html>
