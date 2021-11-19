@@ -1,18 +1,22 @@
-function makeTable(a, b) {
-    let table = '<table border=1>';
-    
-    for (var i = 0; i < b; i++) {
-        table = table + '<tr>';
-    
-        for (var j = 0; j < a; j++) {
-            table = table + "<td>칸</td>"
-    
-        }
-        table = table + '<tr>'
-    
-    }
-    table = table + "</table>";
-    
-
-    document.write(table);
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript</title>
+    </head>
+    <body>
+        <button id="naver">네이버</button>
+        <button id="google">구글</button>
+        <button id="daum">다음</button>
+        <script>
+            document.getElementById('naver').addEventListener('click', function () {
+                document.location.href = 'http://naver.com';
+            })
+            document.getElementById('google').addEventListener('click', function () {
+                document.location.href = 'http://google.com';
+            })
+            document.getElementById('daum').addEventListener('click', function () {
+                document.location.href = 'http://daum.net';
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        div{
+            border: 1px solid;
+            width: 300px;
+            
+        }
+    </style>
+    <body>
+        <div id="searchText">검색어를 입력해 주세요</div>
+        <button id="google">구글</button>
+        <button id="daum">다음</button>
+        <button id="naver">네이버</button>
+        
+
+
+        <script>
+            var result = '';
+            document.getElementById('searchText').addEventListener('click',function(){
+                 result=prompt('검색어를입력해주세요')
+                document.getElementById('searchText').innerText=result
+
+            });
+             document.getElementById('google').addEventListener('click',function(){
+                
+                document.location.href = 'https://www.google.com/search?q='+result+'&rlz=1C5CHFA_enKR976KR976&oq=sibal&aqs=chrome..69i57j46i131i199i433i465i512j0i433i512l2j0i512j69i60l3.1383j0j9&sourceid=chrome&ie=UTF-8';
+             });
+             document.getElementById('daum').addEventListener('click',function(){
+                document.location.href ='https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&sq=&o=&q='+result;
+             });
+             document.getElementById('naver').addEventListener('click',function(){
+                 document.location.href ="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query="+result;
+             })
+        </script>
+    </body>
+</html>
