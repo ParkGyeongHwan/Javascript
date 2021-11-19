@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>tq</title>
+    </head>
+    <style>
+        .btn{
+            background-color: black;
+            color: white;
+        }
+        .new{
+            background-color: white;
+            color: black;
+        }
+    </style>
+    <body>
+        <button class="btn" id="btn1">html</button>        
+        <button class="btn" id="btn2">css</button>        
+        <button class="btn" id="btn3">javascript</button>        
+        <script>
+            document.getElementById('btn1').addEventListener('click',function(){
+                var old = 'new';
+                if(old==document.getElementById('btn2').className) {
+                    document.getElementById('btn1').className = 'new';
+                    document.getElementById('btn2').className = 'btn';
+                    document.getElementById('btn3').className = 'btn';
+                } else {
+                    document.getElementById('btn1').className = 'new';
+                    document.getElementById('btn2').className = 'btn';
+                    document.getElementById('btn3').className = 'btn';
+                }
+                });
+            document.getElementById('btn2').addEventListener('click',function(){
+                var old2 = 'new';
+                if(old2==document.getElementById('btn1').className) {
+                    document.getElementById('btn1').className = 'btn';
+                    document.getElementById('btn2').className = 'new';
+                    document.getElementById('btn3').className = 'btn';
+                } else {
+                    document.getElementById('btn1').className = 'btn';
+                    document.getElementById('btn2').className = 'new';
+                    document.getElementById('btn3').className = 'btn';
+                }
+                });
+                document.getElementById('btn3').addEventListener('click',function(){
+                    var old3 = 'new'
+                    if(old3==document.getElementById('btn1').className) {
+                        document.getElementById('btn1').className = 'btn';
+                        document.getElementById('btn2').className = 'btn';
+                        document.getElementById('btn3').className = 'new';
+                    } else {
+                        document.getElementById('btn1').className = 'btn';
+                        document.getElementById('btn2').className = 'btn';
+                        document.getElementById('btn3').className = 'new';
+                    }
+                });
+            
+         
+           
+           
+        </script>
+    </body>
+</html>
