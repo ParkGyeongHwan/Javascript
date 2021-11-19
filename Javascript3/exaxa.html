@@ -1,0 +1,18 @@
+function makeTable(a, b) {
+    let table = '<table border=1>';
+    
+    for (var i = 0; i < b; i++) {
+        table = table + '<tr>';
+    
+        for (var j = 0; j < a; j++) {
+            table = table + "<td>칸</td>"
+    
+        }
+        table = table + '<tr>'
+    
+    }
+    table = table + "</table>";
+    
+
+    document.write(table);
+}

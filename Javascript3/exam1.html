@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>table</title>
+    </head>
+    <body>
+        <button id="btn1">칸과 줄을 입력해주세요</button>
+        <script>
+            document
+                .getElementById('btn1')
+                .addEventListener('click', function () {
+                    number()
+                });
+            function number() {
+                var a = prompt("칸을 입력하세요")
+                var b = prompt("줄을 입력하세요")
+                num1 = Number(a);
+                num2 = Number(b);
+                if (isNaN(a, b) == true) {
+                    number();
+                } else if (a <= 0 || b <= 0) {
+                    number();
+                } else {
+                    makeTable(a,b);
+                }
+            }
+            function makeTable(a,b){
+                let table = '<table border=1>';
+                    for(i=0;i<b;i++) {
+                    table = table +'<tr>';
+                        for(j=0;j<a;j++) {
+                        table= table +'<td>칸</td>';                            
+                        }
+                    table = table +'</tr>';    
+                }
+                table = table +'</table>';
+                document.write(table);
+            }
+        </script>
+
+    </body>
+</html>
